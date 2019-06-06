@@ -1,0 +1,31 @@
+parser: babel-eslint
+extends:
+  - google
+  - eslint:recommended
+  - prettier
+plugins:
+  - prettier
+  - filenames
+parserOptions:
+  ecmaVersion: 2016
+  sourceType: module
+env:
+  node: true
+  browser: true
+  es6: true
+rules:
+  arrow-body-style:
+    - error
+    - as-needed
+    - { requireReturnForObjectLiteral: true }
+  no-unused-expressions:
+    - error
+    - { allowTaggedTemplates: true }
+  consistent-return: error
+  filenames/match-regex: [error, '^[a-z-\\d\\.]+$', true]
+  no-console: off
+  no-inner-declarations: off
+  prettier/prettier: error
+  quotes: [error, backtick]
+  require-jsdoc: off
+  valid-jsdoc: off
