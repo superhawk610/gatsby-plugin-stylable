@@ -1,5 +1,7 @@
 # gatsby-plugin-stylable
 
+![npm](https://img.shields.io/npm/v/gatsby-plugin-stylable.svg)
+
 Gatsby plugin for enabling [wix/stylable](https://github.com/wix/stylable) support.
 
 ## Install
