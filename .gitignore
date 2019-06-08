@@ -2,7 +2,8 @@
 node_modules
 
 # artifacts
-dist
+index.js
+gatsby-node.js
 
 # config
 .vscode

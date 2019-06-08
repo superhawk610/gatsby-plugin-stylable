@@ -2,11 +2,11 @@
   "name": "gatsby-plugin-stylable",
   "version": "1.0.0",
   "description": "Gatsby plugin for enabling wix/stylable support.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --out-dir .",
     "prepare": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir dist",
+    "watch": "babel -w src --out-dir .",
     "lint": "eslint 'src/**/*.js'",
     "prettier": "prettier --write 'src/**/*'",
     "prepublish": "npm run prepare"
