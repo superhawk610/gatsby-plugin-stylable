@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-stylable",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Gatsby plugin for enabling wix/stylable support.",
   "main": "index.js",
   "scripts": {
