@@ -24,7 +24,7 @@ module.exports = {
 
 If you have any other plugins that add CSS loaders to your Webpack config, make sure to place this plugin **after** them.
 
-If you want to configure `@stylable/webpack-plugin`, you may pass additional configuration (`experimentalHMR` is enabled by default):
+If you want to configure `@stylable/webpack-plugin`, you may pass additional configuration options as shown below (the default configuration is shown):
 
 ```js
 // gatsby-config.js
@@ -35,11 +35,18 @@ module.exports = {
       resolve: `gatsby-plugin-stylable`,
       options: {
         experimentalHMR: false,
+        optimize: {
+          classNameOptimizations: false,
+          shortNamespaces: false,
+        },
       },
     },
   ],
 }
 ```
+
+**NOTE:** `optimize.classNameOptimizations` and `optimize.shortNamespaces` are disabled since they will break
+production builds. Re-enable them at your own risk.
 
 ## Options
 

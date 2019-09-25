@@ -26,6 +26,12 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }, pluginOptions) => {
   // add stylable plugin
   const options = {
     experimentalHMR: true,
+    options: {
+      optimize: {
+        classNameOptimizations: false,
+        shortNamespaces: false,
+      },
+    },
     ...pluginOptions,
   }
   config.plugins.push(new StylableWebpackPlugin(options))
