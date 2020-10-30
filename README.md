@@ -7,12 +7,12 @@ Gatsby plugin for enabling [wix/stylable](https://github.com/wix/stylable) suppo
 ## Install
 
 ```
-npm install --save stylable gatsby-plugin-stylable
+npm install --save gatsby-plugin-stylable
 ```
 
 ## How to use
 
-Just install this plugin alongside `stylable` and enable it in your `gatsby-config.js`.
+Just install this plugin and enable it in your `gatsby-config.js`.
 
 ```js
 // gatsby-config.js
